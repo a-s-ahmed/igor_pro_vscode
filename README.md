@@ -1,6 +1,6 @@
 # igortest1 README
 
-This is the README for your extension "igortest1". After writing up a brief description, we recommend including the following sections.
+Currently a work in progress, igor.tmLanguage is from https://github.com/byte-physics/language-igor and is being re-packaged for vscode from github linguist.
 
 ## Features
 
