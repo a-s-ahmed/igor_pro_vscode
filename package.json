@@ -1,0 +1,25 @@
+{
+    "name": "igortest1",
+    "displayName": "igortest1",
+    "description": "test",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.45.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "igor",
+            "aliases": ["Igor Pro", "igor"],
+            "extensions": [".ipf"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "igor",
+            "scopeName": "source.igor",
+            "path": "./syntaxes/igor.tmLanguage"
+        }]
+    }
+}
