@@ -10,16 +10,28 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "igor",
-            "aliases": ["Igor Pro", "igor"],
-            "extensions": [".ipf"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "igor",
-            "scopeName": "source.igor",
-            "path": "./syntaxes/igor.tmLanguage"
-        }]
+        "languages": [
+            {
+                "id": "igor",
+                "aliases": [
+                    "Igor Pro",
+                    "igor"
+                ],
+                "extensions": [
+                    ".ipf"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "igor",
+                "scopeName": "source.igor",
+                "path": "./syntaxes/igorprobyte.tmLanguage"
+            }
+        ]
+    },
+    "devDependencies": {
+        "js-yaml": "^3.14.0"
     }
 }
