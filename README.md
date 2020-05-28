@@ -1,6 +1,6 @@
 # igortest1 README
 
-Currently a work in progress, igor.tmLanguage is from https://github.com/byte-physics/language-igor and is being re-packaged for vscode from github linguist.
+Currently a work in progress, igor.tmLanguage is based on https://github.com/byte-physics/language-igor and is being re-packaged for vscode from github linguist.
 
 ## Features
 
