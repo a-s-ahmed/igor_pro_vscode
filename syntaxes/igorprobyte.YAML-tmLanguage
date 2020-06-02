@@ -200,7 +200,7 @@ repository:
     match: (?i)\b(?:sqrt|cbrt|sin|cos|tan|asin|acos|atan|atan2|log|log10|exp|pow|sinh|cosh|tanh|asinh|acosh|atanh|factorial|pi|nan|sgn|floor|ceil|gcd|lcd|comp|sum|mean|variance|skew|kurtosis)\b
 
   igor_comment:
-    name: keyword.igor # comment.double-slash.igor
+    name: invalid.comment.igor # comment.double-slash.igor, named invalid to get the red, used to be keyword.igor
     comment: double slash comments with doxygen instruction
     begin: //
     end: $

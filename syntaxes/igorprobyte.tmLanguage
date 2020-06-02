@@ -527,7 +527,7 @@
       <key>igor_comment</key>
       <dict>
         <key>name</key>
-        <string>keyword.igor</string>
+        <string>invalid.comment.igor</string>
         <key>comment</key>
         <string>double slash comments with doxygen instruction</string>
         <key>begin</key>
