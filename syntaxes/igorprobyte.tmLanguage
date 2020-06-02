@@ -585,7 +585,7 @@
           <key>1</key>
           <dict>
             <key>name</key>
-            <string>comment.string.tag.igor</string>
+            <string>constant.numeric.operations.igor</string>
           </dict>
         </dict>
         <key>patterns</key>
