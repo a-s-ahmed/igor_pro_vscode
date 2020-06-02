@@ -241,3 +241,52 @@ Function StartMultiExperimentProcess()
 	return 0
 End
 
+//Image MagPhase testfile
+
+#pragma rtGlobals=1		// Use modern global access method.
+#include <Image MagPhase>
+
+Menu "Macros"
+	"Demo",Demo()
+end
+
+Function Demo()
+	Variable whichOne= NumVarOrDefault("root:Packages:WMMagPhaseDemo:whichOneSav",1)
+	Prompt whichOne,"Which demo:", Popup "gauss;sinx siny;sinxy;sinxy smoothed;Lena photograph"
+	Variable magKind= NumVarOrDefault("root:Packages:WMMagPhaseDemo:magKindSav",1)
+	Prompt magKind,"Magnitude:", Popup "Linear;Sqrt;Log"
+	DoPrompt "Demo",whichOne,magKind
+	
+	String dfSave= GetDataFolder(1)
+	NewDataFolder/O/S root:Packages
+	NewDataFolder/O/S WMMagPhaseDemo
+	Variable/G whichOneSav= whichOne
+	Variable/G magKindSav= magKind
+	SetDataFolder dfSave
+	
+	if( whichOne==1 )
+		Make/O/N=(50,50) data= exp(-((x-25)/5)^2 - (y-25)^2 )
+	elseif( whichOne==2 )
+		Make/O/N=(50,50) data=sin(x)*sin(y)
+	elseif( whichOne==3 )
+		Make/O/N=(50,50) data=sin(x*y)
+	elseif( whichOne==4 )
+		Make/O/N=(50,50) data=sin(x*y)
+		MatrixFilter/N=7 gauss,data
+	endif
+	if( whichOne==5 )
+		CheckDisplayed/A Lena
+		if( V_Flag==0 )
+			Display as "Lena";AppendImage Lena
+			DoAutoSizeImage(0,0)
+		endif
+		ImageMagPhaseCombined(Lena,1,magKind-1,3)
+	else
+		CheckDisplayed/A data
+		if( V_Flag==0 )
+			Display as "data";AppendImage data
+			DoAutoSizeImage(0,1)
+		endif
+		ImageMagPhaseCombined(data,1,magKind-1,3)
+	endif 
+end
