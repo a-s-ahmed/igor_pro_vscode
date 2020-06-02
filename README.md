@@ -8,8 +8,6 @@ comments: done, considered invalid scope for the bright red color
 
 strings: done, considered within the comment scope for the green color
 
-    **Things like sprintf and Execute are same color, should be slightly different ...
-
 keywords: like "if, else.." have been fixed and show up blue. are within keyword scope.
 
 igor functions: placed within string.regexp scope for that muted red color
