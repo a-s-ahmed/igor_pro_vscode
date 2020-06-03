@@ -7,7 +7,7 @@ Follow these steps if you're not using Dark (Visual Studio), Dark+ (default dark
 2. Search for "user settings" and click "Preferences: Open User Settings"
 3. On the left click "Workbench", and then "Appearance".
 4. You should see "Edit in settings.json" Under Color Customizations, click it.
-5. before the last } paste the contents of Theme_overide.json. you may be prompted to add a , at the end of the line before the inserted code.
+5. before the last } paste the contents of Theme_overide.txt. you may be prompted to add a , at the end of the line before the inserted code.
 6. Enjoy!
 
 
