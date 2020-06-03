@@ -93,7 +93,7 @@
           <key>5</key>
           <dict>
             <key>name</key>
-            <string>entity.name.igor</string>
+            <string>constant.regexp.function.igor</string>
           </dict>
           <key>6</key>
           <dict>
@@ -136,7 +136,7 @@
           <key>2</key>
           <dict>
             <key>name</key>
-            <string>entity.name.igor</string>
+            <string>constant.regexp.function.igor</string>
           </dict>
           <key>3</key>
           <dict>
@@ -146,7 +146,7 @@
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>entity.name.igor</string>
+            <string>constant.regexp.function.igor</string>
           </dict>
         </dict>
         <key>end</key>
@@ -213,7 +213,7 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>entity.name.igor</string>
+        <string>constant.regexp.function.igor</string>
         <key>comment</key>
         <string>typical igor include statements</string>
         <key>begin</key>
@@ -242,7 +242,7 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>entity.name.igor</string>
+        <string>constant.regexp.function.igor</string>
         <key>comment</key>
         <string>C precompiler statements</string>
         <key>match</key>
@@ -338,7 +338,7 @@
         <array>
           <dict>
             <key>name</key>
-            <string>entity.name.igor</string>
+            <string>source.igor#constant.regexp.function.igor</string>
             <key>match</key>
             <string>([\w\#]+)(?=[\(])</string>
           </dict>
@@ -373,7 +373,7 @@
       <key>constant_string</key>
       <dict>
         <key>comment</key>
-        <string>double quoted strings, **ALSO includes characters like sprintf for now...</string>
+        <string>double quoted strings</string>
         <key>name</key>
         <string>comment.string.tag.igor</string>
         <key>begin</key>

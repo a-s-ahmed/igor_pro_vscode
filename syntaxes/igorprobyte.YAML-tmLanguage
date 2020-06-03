@@ -42,7 +42,7 @@ patterns:
     '2': {name: keyword.constant.igor} # storage.modifier.static.igor
     '3': {name: keyword.constant.igor} # entity.name.type.igor
     '4': {name: source.igor} # storage.type.function.igor
-    '5': {name: entity.name.igor} # entity.name.function.igor
+    '5': {name: constant.regexp.function.igor} # entity.name.function.igor
     '6': {name: brackethighlighter.round.igor} # punctuation.definition.parameters.igor
   end: \)
   endCaptures:
@@ -55,9 +55,9 @@ patterns:
   begin: (?i)^\s*(Macro|Window)\s+(\w+)\s*(\(\))(\s+:\s+\w+)?
   beginCaptures:
     '1': {name: keyword.constant.igor} # entity.name.type.igor
-    '2': {name: entity.name.igor} # entity.name.function.igor
+    '2': {name: constant.regexp.function.igor} # entity.name.function.igor
     '3': {name: brackethighlighter.round.igor} # punctuation.definition.parameters.igor
-    '4': {name: entity.name.igor}
+    '4': {name: constant.regexp.function.igor}
   end: (?i)^\s*EndMacro
   endCaptures:
     '0': {name: keyword.constant.igor} # punctuation.definition.parameters.igor
@@ -82,7 +82,7 @@ patterns:
   comment: auto variables from operations like V_flag, S_names etc.
   match: (?i)\b(?:V|S)_[A-Z]+\b
 
-- name: entity.name.igor # meta.preprocessor.igor
+- name: constant.regexp.function.igor # meta.preprocessor.igor
   comment: typical igor include statements
   begin: '^#include\b'
   end: $
@@ -93,7 +93,7 @@ patterns:
       end: \>
     - include: '#igor_comment'
 
-- name: entity.name.igor # meta.preprocessor.igor
+- name: constant.regexp.function.igor # meta.preprocessor.igor
   comment: C precompiler statements
   match: '^#\w+'
 
@@ -129,7 +129,7 @@ repository:
   user_functions:
     comment: user functions are optionally highlighted in IP8
     patterns:
-    - name: entity.name.igor # meta.function-call.igor
+    - name: constant.regexp.function.igor # meta.function-call.igor
       match: ([\w\#]+)(?=[\(])
 
   constant_punctuation:
@@ -143,7 +143,7 @@ repository:
         match: ([{}()\[\]])
 
   constant_string:
-    comment: double quoted strings, **ALSO includes characters like sprintf for now...
+    comment: double quoted strings
     name: comment.string.tag.igor # string.quoted.double.igor
     begin: '"'
     end: '"'

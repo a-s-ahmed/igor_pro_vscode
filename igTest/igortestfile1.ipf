@@ -1,5 +1,10 @@
 #pragma rtGlobals=1		// Use modern global access method.
 
+numpnts() //works 
+
+//Last bug im aware of
+Macro
+End
 // ABOUT MULTI-EXPERIMENT PROCESS
 
 // This procedure file demonstrates a process that runs across multiple experiments.
