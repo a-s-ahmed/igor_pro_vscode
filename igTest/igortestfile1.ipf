@@ -52,7 +52,7 @@ EndStructure
 
 // In version 101 of the prefs structure we increased folderPath from 100 to 256 bytes
 static Constant kPrefsVersionNumber = 101
-
+sin()
 //	Loads preferences into our structure.
 static Function LoadPackagePrefs(prefs)
 	STRUCT MultiExperimentProcessPrefs &prefs
