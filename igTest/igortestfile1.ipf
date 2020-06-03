@@ -1,10 +1,8 @@
 #pragma rtGlobals=1		// Use modern global access method.
+numpnts()
 
-numpnts() //works 
 
-//Last bug im aware of
-Macro
-End
+
 // ABOUT MULTI-EXPERIMENT PROCESS
 
 // This procedure file demonstrates a process that runs across multiple experiments.
@@ -78,6 +76,7 @@ static Function LoadPackagePrefs(prefs)
 		SavePackagePrefs(prefs)		// Create default prefs file.
 	endif
 End
+
 
 //	Saves our structure to preferences.
 static Function SavePackagePrefs(prefs)

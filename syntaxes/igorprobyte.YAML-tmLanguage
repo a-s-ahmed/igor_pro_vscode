@@ -76,7 +76,8 @@ patterns:
 - include: '#igor_variable'
 
 - name: keyword.constant.igor
-  match: \b(?i)(?:if|while|for|switch|strswitch|return|do|end|else|elseif|endif|endfor|endswitch|while|menu|submenu|endmenu|case|break|try|catch|endtry|default|continue|Multithread)\b
+  comment: Added static - Endstructure so that they would be highlighted while typing, and not only after you satisfy their begin and end requirements
+  match: \b(?i)(?:static|Function|Macro|Window|EndMacro|threadsafe|structure|EndStructure|if|while|for|switch|strswitch|return|do|end|else|elseif|endif|endfor|endswitch|while|menu|submenu|endmenu|case|break|try|catch|endtry|default|continue|Multithread)\b
 
 - name: source.igor # support.variable.igor
   comment: auto variables from operations like V_flag, S_names etc.

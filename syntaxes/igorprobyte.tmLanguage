@@ -200,8 +200,10 @@
       <dict>
         <key>name</key>
         <string>keyword.constant.igor</string>
+        <key>comment</key>
+        <string>Added static - Endstructure so that they would be highlighted while typing, and not only after you satisfy their begin and end requirements</string>
         <key>match</key>
-        <string>\b(?i)(?:if|while|for|switch|strswitch|return|do|end|else|elseif|endif|endfor|endswitch|while|menu|submenu|endmenu|case|break|try|catch|endtry|default|continue|Multithread)\b</string>
+        <string>\b(?i)(?:static|Function|Macro|Window|EndMacro|threadsafe|structure|EndStructure|if|while|for|switch|strswitch|return|do|end|else|elseif|endif|endfor|endswitch|while|menu|submenu|endmenu|case|break|try|catch|endtry|default|continue|Multithread)\b</string>
       </dict>
       <dict>
         <key>name</key>
@@ -338,7 +340,7 @@
         <array>
           <dict>
             <key>name</key>
-            <string>source.igor#constant.regexp.function.igor</string>
+            <string>constant.regexp.function.igor</string>
             <key>match</key>
             <string>([\w\#]+)(?=[\(])</string>
           </dict>
