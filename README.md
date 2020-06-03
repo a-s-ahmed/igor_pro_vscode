@@ -1,6 +1,6 @@
 # IgorPro8-VSCode
 
-## For Best Results on EVERY THEME PACK:
+## For best results on every theme pack:
 Follow these steps if you're not using Dark (Visual Studio), Dark+ (defualt dark) and you want the syntax highlighting to still match IgorPro's exactly. Light (Visual Studio), Light+ (defualt light) still work well but user-defined functions and igor functions appear very similarly.
 
 1. Hit Ctrl+Shift+P
