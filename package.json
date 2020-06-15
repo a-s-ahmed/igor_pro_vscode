@@ -3,7 +3,7 @@
     "name": "ipf",
     "displayName": "IgorPro",
     "description": "IgorPro Syntax highlighter",
-    "version": "2.0.0",
+    "version": "1.0.0",
     "repository": {
         "url": "https://github.lightsource.ca/ahmeda2/IgorPro8-VSCode"
     },
