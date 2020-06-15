@@ -1,4 +1,4 @@
-# IgorPro8-VSCode
+Tested with Igor Pro 8, should work with all versions.
 
 ## For best results on every theme pack:
 Follow these steps if you're not using Dark (Visual Studio), Dark+ (default dark) and you want the syntax highlighting to still match IgorPro's exactly. Light (Visual Studio), Light+ (defualt light) still work well without these steps but user-defined functions and igor functions will appear very similar.
@@ -28,6 +28,7 @@ Igor operations: under constant.numeric scope for that light green/blue.
 User-defined functions: falls under constant.regexp for the purple color, includes #pragmas. 
 
 **Note: User defined functions are optionally highlighted in igorpro, I found it helpful to keep them highlighted here.
+
 
 
 
