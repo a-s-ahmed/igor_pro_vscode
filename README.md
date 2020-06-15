@@ -7,15 +7,11 @@ Follow these steps if you're not using Dark (Visual Studio), Dark+ (default dark
 2. Search for "user settings" and click "Preferences: Open User Settings"
 3. On the left click "Workbench", and then "Appearance".
 4. You should see "Edit in settings.json" Under Color Customizations, click it.
-5. before the last } paste the contents of Theme_overide.txt. you may be prompted to add a , at the end of the line before the inserted code.
+5. before the last } paste the code at the end of this file. you may be prompted to add a , at the end of the line before the inserted code.
 6. Enjoy!
 
 
-igor.tmLanguage is based on https://github.com/byte-physics/language-igor and is being re-packaged for vscode default themes, both dark and light. Im testing with Light (Visual Studio), Light+ (defualt light), Dark (Visual Studio), Dark+ (defualt dark) but I also tried creating a custom theme pack.
-
-After a couple of days of working on that custom theme pack I realized I can avoid making the user download a second add-on and instead code with the default theme packs in mind. 
-
-After spending some time learning TypeScript and how to create syntax highlighting add-ons I found the easiest way was to find the vscode default themepack code and dig through it to find which scope corresponding to the colours we want from igorPro. From there I was able to modify the github linguist code to work for vscode. 
+igor.tmLanguage is based on https://github.com/byte-physics/language-igor and is being re-packaged for vscode default themes, both dark and light. Im testing with Light (Visual Studio), Light+ (defualt light), Dark (Visual Studio), Dark+ (defualt dark).
 
 comments:  considered invalid scope for the bright red color
 
@@ -36,4 +32,44 @@ User-defined functions: falls under constant.regexp for the purple color, includ
 
 
 
-
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "invalid.comment.igor",
+                "settings": {
+                    "foreground": "#FF0000",
+                }
+            },
+            {
+                "scope": "comment.string.tag.igor",
+                "settings": {
+                    "foreground": "#009C00",
+                }
+            },
+            {
+                "scope": "keyword.constant.igor",
+                "settings": {
+                    "foreground": "#0000FF",
+                }
+            },
+            {
+                "scope": "constant.numeric.operations.igor",
+                "settings": {
+                    "foreground": "#007575",
+                }
+            },
+            {
+                "scope": "string.regexp.variable.igor",
+                "settings": {
+                    "foreground": "#C34E00",
+                }
+            },
+            {
+                "scope": "constant.regexp.function.igor",
+                "settings": {
+                    "foreground": "#9C00FD",
+                }
+            },
+            
+        ]
+    },

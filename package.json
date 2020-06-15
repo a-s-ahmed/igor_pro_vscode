@@ -1,8 +1,8 @@
 {
-    "name": "igortest1",
-    "displayName": "igortest1",
-    "description": "test",
-    "version": "0.0.1",
+    "name": "qmsc.ipf",
+    "displayName": "IgorPro",
+    "description": "IgorPro Syntax highlighter",
+    "version": "1.0.0",
     "engines": {
         "vscode": "^1.45.0"
     },
