@@ -1,7 +1,11 @@
-Tested with Igor Pro 8, should work with all versions.
+# Igor Pro Syntax Highlighting in Visual Studio Code
+
+Over 429 installs to date, with 5-star rating.
+
+Tested with Igor Pro 8 and all basic theme packs, should work with all versions.
 
 ## For best results on every theme pack:
-Follow these steps if you're not using Dark (Visual Studio), Dark+ (default dark) and you want the syntax highlighting to still match IgorPro's exactly. Light (Visual Studio), Light+ (defualt light) still work well without these steps but user-defined functions and igor functions will appear very similar.
+If you notice your results aren't perfect and you're using a relatively unknown theme pack consider following these steps.
 
 1. Hit Ctrl+Shift+P
 2. Search for "user settings" and click "Preferences: Open User Settings"
@@ -11,7 +15,7 @@ Follow these steps if you're not using Dark (Visual Studio), Dark+ (default dark
 6. Enjoy!
 
 
-igor.tmLanguage is based on https://github.com/byte-physics/language-igor and is being re-packaged for vscode default themes, both dark and light. Im testing with Light (Visual Studio), Light+ (defualt light), Dark (Visual Studio), Dark+ (defualt dark).
+igor.tmLanguage is based on https://github.com/byte-physics/language-igor .
 
 comments:  considered invalid scope for the bright red color
 
