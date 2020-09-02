@@ -15,6 +15,7 @@ If you notice your results aren't perfect and you're using a relatively unknown 
 6. Enjoy!
 
 
+## Some Dev notes
 igor.tmLanguage is based on https://github.com/byte-physics/language-igor .
 
 comments:  considered invalid scope for the bright red color
@@ -30,6 +31,7 @@ APMath and MatrixOP: same as igor functions.
 Igor operations: under constant.numeric scope for that light green/blue.
 
 User-defined functions: falls under constant.regexp for the purple color, includes #pragmas. 
+
 
 **Note: User defined functions are optionally highlighted in igorpro, I found it helpful to keep them highlighted here.
 
