@@ -37,7 +37,7 @@ User-defined functions: falls under constant.regexp for the purple color, includ
 
 
 
-
+## settings.json optional addition
 
     "editor.tokenColorCustomizations": {
         "textMateRules": [
