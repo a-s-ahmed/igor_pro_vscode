@@ -1,8 +1,8 @@
-# Igor Pro Syntax Highlighting in Visual Studio Code
+# Igor Pro Syntax Highlighting in Visual Studio Code (400+ installs, 5-star rating)
 
-Over 429 installs to date, with 5-star rating.
+This is the code for my extension: https://marketplace.visualstudio.com/items?itemName=qmsc.ipf 
 
-Tested with Igor Pro 8 and all basic theme packs, should work with all versions.
+Tested with Igor Pro 8 and all basic theme packs, should work with all versions and theme packs.
 
 ## For best results on every theme pack:
 If you notice your results aren't perfect and you're using a relatively unknown theme pack consider following these steps.
